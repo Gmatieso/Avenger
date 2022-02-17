@@ -1,0 +1,13 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background:url(images\ sources/ironman10.jpg) no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: sans-serif;
+    color: orangered;
+}

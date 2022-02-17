@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validated Login Form</title>
+    <link rel="stylesheet" type="text/css" href="Loginstyle.css">
+<body>
+    <div class="container">
+        <form class = "Login_form" method="post" action = "home.html"  name = "form" onsubmit ="return validated()">
+            <img src = "avenger/hacker.png" alt="">
+            <h1 class = "label"> FaceBook User Login</h1>
+            <div class = "font"> Email or Phone</div>
+            <input autocomplete="off" type = "text" name="email"></input>
+            <div id = "email_error">Please fill up your Email or Phone</div>
+
+            <div class = "font2">Password</div>
+            <input type = "password" name="password"></input>
+            <div id = "pass_error">Please fill up your Password</div>
+
+            <button type = "submit">Login</button>
+
+        </form>
+    </div>
+    <script src = "loginvalid.js"> </script>
+</body>
+</head>
+</html>
