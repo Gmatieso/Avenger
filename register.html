@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Validated Login Form</title>
+    <title>Sign Up Form</title>
     <link rel="stylesheet" type="text/css" href="Loginstyle.css">
 <body>
     <div class="container">
-        <form class = "Login_form" id="login">
+        <form class = "Login_form"  id ="register">
             <!-- <img src = "hacker.png" alt=""> -->
-            <h1 class = "label">Login</h1>
             <div class = "font"> Email</div>
-            <input autocomplete="off" type = "text" name="email"></input>
+            <input autocomplete="off" type = "email" name="email"></input>
             <div id = "email_error">Please fill up your Email</div>
+
             <div class = "font2">Password</div>
             <input type = "password" name="password"></input>
             <div id = "pass_error">Please fill up your Password</div>
-            <a href="forgotpass.html">Forgot Password?</a>
-            <button type = "submit">Login</button>
+
+            <button type="submit">Sign Up</button>
+
         </form>
-        <button id="googleBtn">Sign in with Google</button>
     </div>
- 
-     <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
@@ -40,8 +39,7 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 </script>
-
-    <script src = "js/login.js"> </script>
+<script src="js/register.js"></script>
 </body>
 </head>
 </html>
