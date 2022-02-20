@@ -2,7 +2,9 @@
 
 const loginForm = document.querySelector('#login');
 
-loginForm.addEventListener('submit', function(e){
+const loginBtn = document.getElementById('loginBtn');
+
+function loginUser(e) {
     // prevents page refresh on submit
     e.preventDefault();
 
@@ -19,7 +21,9 @@ loginForm.addEventListener('submit', function(e){
             window.location.assign('home.html');
         })
        .catch(err => alert(err.message));
-})
+}
+
+loginBtn.addEventListener('click',loginUser);
 
 // login with Google btn
 let googleBtn = document.getElementById('googleBtn');
